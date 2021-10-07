@@ -12,12 +12,12 @@ body{
 
 .header{
     background-color: var(--blanco-opacity);
-    transition: all.6s;
+    transition: height .6s, background-color .6s;
 }
 
 .header--active{
     background-color: var(--blanco);
-    transition: all .6s;
+    transition: height .6s, background-color .6s;
 }
 
 /* Main */
