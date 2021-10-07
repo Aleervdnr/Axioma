@@ -21,7 +21,7 @@ body{
 /* Main */
 .main__p{
     color: var(--blanco);
-    text-align: right;
+    text-align: center;
 }
 
 /* .main__p::after{
