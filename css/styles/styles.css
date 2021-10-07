@@ -24,18 +24,6 @@ body{
     text-align: center;
 }
 
-/* .main__p::after{
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-    width: 25%;
-    min-width: 200px;
-    max-width: 300px;
-    height: 5px;
-    background-color: var(--azul-claro);
-    z-index: 0;
-} */
 
 /* Mobile */
 @media screen and (max-width: 979px){
