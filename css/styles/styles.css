@@ -12,10 +12,12 @@ body{
 
 .header{
     background-color: var(--blanco-opacity);
+    transition: all.6s;
 }
 
 .header--active{
     background-color: var(--blanco);
+    transition: all .6s;
 }
 
 /* Main */
@@ -30,6 +32,10 @@ body{
 /* Header */
     .nav__ul{
         background-color: var(--blanco-opacity);
+    }
+
+    .header--active .nav__ul{
+        background-color: var(--blanco);
     }
 /* Main */
 
