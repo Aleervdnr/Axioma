@@ -1,0 +1,53 @@
+:root{
+    --blanco:#fff;
+    --blanco-opacity: rgba(255,255,255,0.9);
+    --azul-claro:#0077BD;
+}
+/* Body */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+.header{
+    background-color: var(--blanco-opacity);
+}
+
+.header--active{
+    background-color: var(--blanco);
+}
+
+/* Main */
+.main__p{
+    color: var(--blanco);
+    text-align: right;
+}
+
+.main__p::after{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 25%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 5px;
+    background-color: var(--azul-claro);
+    z-index: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 979px){
+/* Header */
+    .nav__ul{
+        background-color: var(--blanco-opacity);
+    }
+/* Main */
+
+}
+
+/* Desktop */
+@media all and (min-width:980px){
+
+}
