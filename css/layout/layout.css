@@ -71,6 +71,7 @@
     height: 100vh;
     background-image: url(https://www.axiomaeventos.com/AxiomaEventos/Banners/Axioma-Eventos-Casamiento-Aire-Libre-Parque-Espacios-Verdes.jpg);
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -86,6 +87,11 @@
     min-width: 200px;
     max-width: 300px;
     border-bottom: 3px solid var(--azul-claro);
+}
+
+/* About */
+.about{
+    height: 100vh;
 }
 
 /* Mobile */
