@@ -26,6 +26,10 @@ body{
     text-align: center;
 }
 
+.bg-gray{
+    background-color: rgb(230, 230, 230);
+}
+
 
 /* Mobile */
 @media screen and (max-width: 979px){
