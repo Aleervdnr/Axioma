@@ -33,7 +33,6 @@ window.addEventListener("scroll", ()=>{
     if(scrollY >= sectionTop - sectionHeight/3){
       current = section.getAttribute("id")
     }
-    console.log(current)
   })
 
   navlink.forEach( a =>{

@@ -17,9 +17,16 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/base/normalize.css" />
-    <link rel="stylesheet" href="css/components/hover.css">
+    <link rel="stylesheet" href="css/components/hover.css" />
     <link rel="stylesheet" href="css/layout/layout.css" />
     <link rel="stylesheet" href="css/styles/styles.css" />
   </head>
@@ -34,13 +41,44 @@
           />
         </div>
         <ul class="nav__ul">
-          <li class="nav__li"><a href="#home" class="nav__link hvr-sweep-to-bottom home__link">Home</a></li>
-          <li class="nav__li"><a href="#about" class="nav__link hvr-sweep-to-bottom about__link">Nosotros</a></li>
-          <li class="nav__li"><a href="#video" class="nav__link hvr-sweep-to-bottom video__link">Video</a></li>
-          <li class="nav__li"><a href="#servicios" class="nav__link hvr-sweep-to-bottom servicios__link">Servicios</a></li>
-          <li class="nav__li"><a href="#catering" class="nav__link hvr-sweep-to-bottom catering__link">Catering</a></li>
-          <li class="nav__li"><a href="#imagenes" class="nav__link hvr-sweep-to-bottom imagenes__link">Imagenes</a></li>
-          <li class="nav__li"><a href="#contacto" class="nav__link hvr-sweep-to-bottom contacto__link">Contacto</a></li>
+          <li class="nav__li">
+            <a href="#home" class="nav__link hvr-sweep-to-bottom home__link"
+              >Home</a
+            >
+          </li>
+          <li class="nav__li">
+            <a href="#about" class="nav__link hvr-sweep-to-bottom about__link"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav__li">
+            <a
+              href="#servicios"
+              class="nav__link hvr-sweep-to-bottom servicios__link"
+              >Servicios</a
+            >
+          </li>
+          <li class="nav__li">
+            <a
+              href="#catering"
+              class="nav__link hvr-sweep-to-bottom catering__link"
+              >Catering</a
+            >
+          </li>
+          <li class="nav__li">
+            <a
+              href="#imagenes"
+              class="nav__link hvr-sweep-to-bottom imagenes__link"
+              >Imagenes</a
+            >
+          </li>
+          <li class="nav__li">
+            <a
+              href="#contacto"
+              class="nav__link hvr-sweep-to-bottom contacto__link"
+              >Contacto</a
+            >
+          </li>
         </ul>
 
         <div class="burger">
@@ -55,17 +93,50 @@
       <p class="main__p">Una noche inolvidable</p>
     </section>
 
-    <section class="section about" id="about"></section>
+    <section class="about" id="about">
+      
+        <div class="about__container-text">
+          <h1 class="h1">Axioma Eventos</h1>
+          <p class="about__p">
+            Un nuevo concepto en Salones de Fiesta, donde se fusiona una moderna
+            arquitectura, espacios verdes, equipamiento de última generación en
+            catering, luz, sonido, lasers, pantallas LED y un equipo de
+            profesionales con más de 30 años de experiencia que estarán a su
+            disposición para brindarle a su evento el marco perfecto en donde la
+            elegancia, el confort y la tecnología se combinan para lograr que
+            ese momento tan especial de su vida planificado con tanto tiempo y
+            esfuerzo sea un éxito.
+          </p>
+          <div class="about__lista">
+            <ul class="about__ul">
+              <li class="about__li">Cumpleaños de Quince (15 Años)</li>
+              <li class="about__li">Casamientos. Bodas.</li>
+              <li class="about__li">Bautismos. Aniversarios.</li>
+              <li class="about__li">Eventos en general.</li>
+            </ul>
+          </div>
+          <p class="about__p">Moderno Salón de Fiestas y Eventos con capacidad desde 80 (ochenta) a 180 (ciento ochenta) personas, especialmente concebido para quienes esperan una cordial atención, con multiespacios de confort que pueden ser decorados y adaptados para darle el toque de distinción que su evento merece, logrando así la excelencia en cada detalle.</p>
+          <p class="about__p">Lo invitamos a visitar las distintas secciones de nuestro sitio web y contactarse con Nosotros.</p>
+          <p class="about__p">Atentamente.</p>
+          <p class="about__p">AXIOMA EVENTOS</p>
+        </div>
+        <div class="about__container-img">
 
-    <section class="section about bg-gray" id="video"></section>
+        </div>
+      
+    </section>
 
-    <section class="section about" id="servicios"></section>
+    <section class="servicios bg-gris" id="servicios">
 
-    <section class="section about bg-gray" id="catering"></section>
+      <h2 class="h2">Servicios</h2>
 
-    <section class="section about" id="imagenes"></section>
+    </section>
 
-    <section class="section about bg-gray" id="contacto"></section>
+    <section class="section" id="catering"></section>
+
+    <section class="section bg-gris" id="imagenes"></section>
+
+    <section class="section" id="contacto"></section>
 
     <script src="js/app.js"></script>
   </body>
