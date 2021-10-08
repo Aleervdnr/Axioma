@@ -76,7 +76,7 @@
 }
 
 /* Sections */
-.section{
+.section {
   height: 100vh;
 }
 /* Main */
@@ -129,9 +129,9 @@
   background-position: 15% center;
 }
 
-.about__p{
+.about__p {
   margin-bottom: 0;
-  font-size: calc(13.5px + .2vw);
+  font-size: calc(13.5px + 0.2vw);
 }
 
 .about__lista {
@@ -145,19 +145,51 @@
 .about__ul {
   margin-left: 30px;
   list-style: none;
-  font-size: calc(13.5px + .2vw);
+  font-size: calc(13.5px + 0.2vw);
   display: grid;
-
 }
 
 /* Servicios */
-.servicios{
+.servicios {
+  position: relative;
   width: 100%;
-  padding: 85px 40px;
+  padding: 85px 0;
   text-align: center;
 }
 
+.h2{
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
+.h3 {
+  display: inline-block;
+}
+
+.servicios__container {
+  margin-top: 80px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.servicios__box1,
+.servicios__box2 {
+  width: 100%;
+  height: 100%;
+}
+
+.servicios__box1 {
+  background-image: url(https://scontent.feze11-1.fna.fbcdn.net/v/t1.6435-9/239300772_1976173862557938_5856237966783370551_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=xsq7i0LkrzwAX8D5G0F&_nc_ht=scontent.feze11-1.fna&oh=2a51890897daddfe05a4d63abb215de7&oe=618511DE);
+  background-size: cover;
+  background-position: center ;
+}
+
+.servicios__box2 {
+  background-image: url(https://scontent.feze11-1.fna.fbcdn.net/v/t1.6435-9/79258474_1437528363089160_6870326164531970048_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=lZTCWivDxJcAX9BFGA8&_nc_ht=scontent.feze11-1.fna&oh=b20c457f2cc0f206fa0dff5543847f26&oe=6185E462);
+  background-size: cover;
+  background-position: center;
+}
 
 /* Mobile */
 @media screen and (max-width: 979px) {
@@ -210,20 +242,46 @@
   }
 
   /* About */
-  .about{
+  .about {
     flex-direction: column;
   }
 
-  .about__container-text, .about__container-img{
+  .about__container-text,
+  .about__container-img {
     width: 100%;
   }
-  .about__container-img{
+  .about__container-img {
     height: 350px;
     background-size: cover;
     background-position: left center;
   }
-  .about__container-text{
+  .about__container-text {
     padding-bottom: 20px;
+  }
+
+  /* Servicios */
+  .servicios{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .servicios__container {
+    height: 750px;
+    flex-direction: column;
+  }
+
+  .h3 {
+    padding: 20px;
+    font-size: 16px;
+    width: 90%;
+    max-width: 390px;
+    position: absolute;
+    top: 15%;
+    right:50%;
+    transform: translateX(50%);
+  }
+
+  .servicios__box2{
+    margin-top: 20px;
   }
 }
 
@@ -250,12 +308,20 @@
   }
 
   /* About */
-  .about{
+  .about {
     height: 800px;
   }
 
   /* Servicios */
-  .servicios__p{
+  .h3 {
+    padding: 30px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .servicios__p {
     font-size: 14px;
   }
 }
