@@ -152,6 +152,11 @@
   width: 100%;
   height: 100vh;
   padding: 85px 40px;
+  text-align: center;
+}
+
+.servicios__p{
+  word-wrap: break-word;
 }
 
 /* Mobile */

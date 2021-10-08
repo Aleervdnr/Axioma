@@ -1,7 +1,7 @@
 :root{
     --blanco:#fff;
     --blanco-opacity: rgba(255,255,255,0.9);
-    --bg-gris:rgb(230, 230, 230);
+    --bg-gris:rgb(255, 246, 246);
     --negro: rgba(0,0,0,.7);
     --azul-claro:#0077BD;
 }
@@ -70,7 +70,9 @@ body{
   }
 
   /* Servicios */
-
+  .h3{
+    color: var(--azul-claro);
+}
 
 /* Mobile */
 @media screen and (max-width: 979px){
