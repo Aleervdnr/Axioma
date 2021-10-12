@@ -2,7 +2,8 @@
   --blanco: #fff;
   --blanco-opacity: rgba(255, 255, 255, 0.9);
   --bg-gris: rgb(255, 246, 246);
-  --negro: rgba(0, 0, 0, 0.7);
+  --negro: #000;
+  --negro-opacity: rgba(0, 0, 0, 0.7);
   --azul-claro: #0077bd;
 }
 
@@ -30,7 +31,7 @@ body {
 }
 
 .nav__link {
-  color: var(--negro);
+  color: var(--negro-opacity);
 }
 
 .nav--hover-active {
@@ -38,6 +39,8 @@ body {
 }
 /* Main */
 .main__p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   color: var(--blanco);
   text-align: center;
 }
@@ -76,6 +79,23 @@ body {
   color: var(--azul-claro);
 }
 
+.servicios__ul1,.servicios__ul2{
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--negro-opacity);
+  color: var(--blanco);
+  list-style: none; /* Quitamos los marcadores */
+  padding: 10px; /* Quitamos el padding por defecto de la lista */
+}
+
+.servicios__box1 ul li::before,
+.servicios__box2 ul li::before {
+  content: "\2022"; /* Insertamos el marcador */
+  padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+  color: var(--azul-claro); /* Coloreamos la viñeta */
+
+}
+
 /* Mobile */
 @media screen and (max-width: 979px) {
   /* Header */
@@ -87,9 +107,16 @@ body {
     background-color: var(--blanco);
   }
   /* Main */
+
+  /* Servicios */
+
 }
 
 /* Desktop */
 @media all and (min-width: 980px) {
   /* Servicios */
+  .servicios__box1 ul li:hover, .servicios__box2 ul li:hover,.servicios__box1 ul li:hover::before,.servicios__box2 ul li:hover::before{
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+  }
 }

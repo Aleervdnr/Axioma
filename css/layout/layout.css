@@ -153,7 +153,7 @@
 .servicios {
   position: relative;
   width: 100%;
-  padding: 85px 0;
+  padding-top: 85px;
   text-align: center;
 }
 
@@ -179,16 +179,43 @@
   height: 100%;
 }
 
-.servicios__box1 {
-  background-image: url(https://scontent.feze11-1.fna.fbcdn.net/v/t1.6435-9/239300772_1976173862557938_5856237966783370551_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=xsq7i0LkrzwAX8D5G0F&_nc_ht=scontent.feze11-1.fna&oh=2a51890897daddfe05a4d63abb215de7&oe=618511DE);
+.servicios__box1,.servicios__box2{
   background-size: cover;
   background-position: center ;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.servicios__box1 {
+  background-image: url(https://scontent.feze11-1.fna.fbcdn.net/v/t1.6435-9/239300772_1976173862557938_5856237966783370551_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=xsq7i0LkrzwAX8D5G0F&_nc_ht=scontent.feze11-1.fna&oh=2a51890897daddfe05a4d63abb215de7&oe=618511DE);
+  
 }
 
 .servicios__box2 {
   background-image: url(https://scontent.feze11-1.fna.fbcdn.net/v/t1.6435-9/79258474_1437528363089160_6870326164531970048_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=lZTCWivDxJcAX9BFGA8&_nc_ht=scontent.feze11-1.fna&oh=b20c457f2cc0f206fa0dff5543847f26&oe=6185E462);
-  background-size: cover;
-  background-position: center;
+}
+
+.servicios__ul1,.servicios__ul2{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.servicios__box1 ul li, .servicios__box2 ul li{
+  padding: 5px;
+  text-align: left;
+}
+
+/*Catering*/
+.catering {
+  width: 100%;
+  padding-top: 85px;
+  text-align: center;
 }
 
 /* Mobile */
@@ -275,7 +302,7 @@
     width: 90%;
     max-width: 390px;
     position: absolute;
-    top: 15%;
+    top: 18%;
     right:50%;
     transform: translateX(50%);
   }
@@ -283,6 +310,9 @@
   .servicios__box2{
     margin-top: 20px;
   }
+
+  
+
 }
 
 /* Tablet */
@@ -316,7 +346,7 @@
   .h3 {
     padding: 30px;
     position: absolute;
-    top: 17%;
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -324,4 +354,6 @@
   .servicios__p {
     font-size: 14px;
   }
+
+
 }
