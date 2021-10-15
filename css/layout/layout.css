@@ -374,7 +374,6 @@ body {
 
   /* Servicios */
   .servicios__container {
-    height: 750px;
     flex-direction: column;
   }
 
